@@ -48,6 +48,7 @@ class MultiViewTypeAdapter(private val list: MutableList<HighlightModel>) :
     override fun getItemCount(): Int {
         return totalTypes
     }
+    
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         Log.d("MultiViewTypeAdapter", "Hi, onBindViewHolder")
@@ -90,6 +91,7 @@ class MultiViewTypeAdapter(private val list: MutableList<HighlightModel>) :
             }
         }
     }
+
 
     // 여기서 받는 position은 데이터의 index다.
     override fun getItemViewType(position: Int): Int {
