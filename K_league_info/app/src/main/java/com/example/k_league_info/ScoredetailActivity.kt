@@ -2,10 +2,8 @@ package com.example.k_league_info
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.SortedList
 import com.example.k_league_info.Scoredetail.*
 import kotlinx.android.synthetic.main.activity_scoredetail.*
 import com.example.k_league_info.ui.score.ScoreBoard
@@ -15,6 +13,7 @@ class ScoredetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scoredetail)
         //받아온 scoreBoard
+
         score.text = intent.getStringExtra("score")
 
         var homeResName = "@drawable/"
@@ -59,7 +58,6 @@ class ScoredetailActivity : AppCompatActivity() {
         val awayResId =
             team_logo_2.resources.getIdentifier(awayResName, "drawable", packageName)
         team_logo_2.setImageResource(awayResId)
-
         init(intent.getSerializableExtra("scoreDetail") as ArrayList<HighlightModel>)
     }
 

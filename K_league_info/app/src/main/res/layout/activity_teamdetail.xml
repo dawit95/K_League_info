@@ -9,24 +9,19 @@
         android:id="@+id/teamdescLinearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:padding="5dp"
         tools:ignore="MissingConstraints">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/teamLogo"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:scaleType="fitCenter"
             android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
             app:srcCompat="@drawable/gangwon" />
 
-        <TextView
-            android:id="@+id/teamDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="151dp"
-            android:layout_weight="1"
-            android:padding="5dp"
-            android:text="팀 설명 어쩌고 저쩌고" />
     </LinearLayout>
 
     <ScrollView
@@ -44,18 +39,18 @@
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@+id/teamdescLinearlayout">
 
-            <TextView
-                android:id="@+id/staff_teamdetail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="감독 및 코치" />
+<!--            <TextView-->
+<!--                android:id="@+id/staff_teamdetail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="감독 및 코치" />-->
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/staff_recyclerview"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:orientation="horizontal" />
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/staff_recyclerview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="120dp"-->
+<!--                android:orientation="horizontal" />-->
 
             <TextView
                 android:id="@+id/fw_teamdetail"
@@ -67,7 +62,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/fw_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
             <TextView
@@ -80,7 +75,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/mf_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
             <TextView
@@ -93,7 +88,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/df_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal" />
 
             <TextView
@@ -106,7 +101,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/gk_recyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal" />
         </LinearLayout>
     </ScrollView>

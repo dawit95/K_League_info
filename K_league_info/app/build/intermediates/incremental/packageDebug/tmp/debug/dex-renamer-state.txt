@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon Nov 02 23:44:03 KST 2020
 base.0=C\:\\Android_Kotlin_Examples\\K_League_info\\K_league_info\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Mon Nov 09 15:31:11 KST 2020
+base.0=C\:\\Users\\Metanet\\Desktop\\K_League_info\\K_league_info\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+>>>>>>> upstream/develop
 path.0=classes.dex
 renamed.0=classes.dex
